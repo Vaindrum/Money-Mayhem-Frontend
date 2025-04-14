@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎲 MoneyMayhem Frontend Roadmap
 
-## Getting Started
+Built using **Next.js (TypeScript)**, **TailwindCSS**, **Zustand**, and **shadcn/ui**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Initial Setup (Day 1–2)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [x] Initialize Next.js (with TypeScript & Turbopack)
+- [x] Install TailwindCSS, classnames, Zustand, shadcn/ui
+- [x] Create base folder structure: `components/`, `pages/`, `lib/`, `stores/`
+- [x] Global layout with `Navbar`, `Footer`, and default page layout
+- [x] Setup Zustand with auth & UI slices
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏠 Home Page (Day 3–6)
 
-## Learn More
+### Main Section
+- [x] Logo, Title, Tagline
+- [x] Name input + Play button
+- [x] Create private game button
 
-To learn more about Next.js, take a look at the following resources:
+### Modals & Extras
+- [x] Rooms Modal
+- [x] Login Modal
+- [x] Profile Modal (avatar, username, sign out)
+- [x] Volume slider (top-left), Discord button (bottom-right)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Others
+- [x] How To Play component (text + image)
+- [x] Footer (links: info, blog, terms, privacy, cookies, discord)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 👤 Profile Page (Day 7–10)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [x] Top Section (avatar, username, editable if authUser)
+- [x] Achievements Section (title, % completed)
+- [x] Statistics Section (games played/won, friends)
+- [x] Friends Section (avatar, online status)
+- [x] Games History Section (game recaps)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🎮 Game Page (Day 11–18)
+
+### Layout
+- [x] Responsive layout: lg (side sections) / sm (top-bottom stacking)
+- [x] Header: logo + controls (zoom, how to play, discord)
+
+### Board & Center
+- [x] Board Component (game board UI)
+- [x] Game Logs Center (real-time updates)
+
+### Right Section (lg) / Bottom Section (sm)
+- [x] Players Container
+- [x] VoteKick / Bankrupt Container
+- [x] Trades Container
+- [x] Brief Stats + Full Stats Modal
+- [x] Achievement Toast (bottom right)
+
+### Left Section
+- [x] Share Game Container
+- [x] Ads Container
+- [x] Chat Modal or Chat Container
+
+---
+
+## 🔁 Integrations & State Management (Day 19–25)
+
+- [ ] Connect with backend API (auth, game logic, rooms)
+- [ ] Use Zustand slices: `userSlice`, `gameSlice`, `chatSlice`, etc.
+- [ ] Socket.io integration for real-time sync
+- [ ] Update state for game actions, turns, trades, events
+
+---
+
+## 🧪 Final Polish & Testing (Day 26–30)
+
+- [ ] Responsive design across all devices
+- [ ] Animate UI with Framer Motion (optional)
+- [ ] Add loading states, skeletons, and fallback UIs
+- [ ] Accessibility pass (focus, keyboard nav, alt text)
+- [ ] Testing (play a full game, check edge cases)
+- [ ] Bug fixing and final cleanup
+
+---
+
+## 🔧 Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Zustand](https://github.com/pmndrs/zustand)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [TypeScript](https://www.typescriptlang.org/)
