@@ -16,26 +16,26 @@ const Play = () => {
   }
   return (
     <main className='min-h-screen bg-[#1a1625] text-white flex flex-col items-center justify-center px-4'>
-      <div className='absolute top-4 right-4 flex gap-4 text-sm text-purple-300'>
+      <div className='absolute top-4 right-4 flex gap-4 text-sm text-primary'>
         <button className='cursor-pointer p-2 hover:bg-gray-800 rounded-lg'>Store</button>
         <button className='cursor-pointer p-2 hover:bg-gray-800 rounded-lg'>Login</button>
       </div>
 
       <motion.div initial={{opacity:0, y:-20}} animate={{opacity:1, y:0}} className='text-center'>
         <div className='flex justify-center mb-4'>
-          <IoDice size={64}/>
+          <IoDice size={124}/>
         </div>
-        <h1 className='text-4xl font-bold'>MoneyMayhem</h1>
-        <p className='text-purple-300 mt-2'>Build your empire</p>
+        <h1 className='text-6xl text-white font-bold'>MoneyMayhem</h1>
+        <p className='text-primary text-2xl font-medium mt-2'>Build your empire</p>
 
         <div className='mt-8 space-y-4'>
-          Input
-          <div className='mt-5'>
-          <button onClick={handlePlay} className='bg-purple-700 cursor-pointer border-0 px-15 py-4 rounded-lg'>Play</button>
+          <input type="text" placeholder='Your nickname....' className='bg-gray-700 px-4 py-2 rounded-md w-[10.5rem] border-0'/>
+          <div className=''>
+          <button onClick={handlePlay} className='bg-primary cursor-pointer font-bold text-2xl border-0 px-15 py-4 rounded-lg'>Play</button>
           </div>
-          <div className='flex justify-center gap-4 text-sm text-purple-300'>
-            <button className='cursor-pointer border px-5 py-3 rounded-lg'>All Rooms</button>
-            <button className='cursor-pointer border px-5 py-3 rounded-lg'>Create a private game</button>
+          <div className='flex justify-center gap-4 text-sm'>
+            <button className='cursor-pointer border-0 px-5 py-3 bg-secondary font-medium rounded-lg'>All Rooms</button>
+            <button className='cursor-pointer border-0 px-5 py-3 bg-secondary font-medium rounded-lg'>Create a private game</button>
           </div>
         </div>
       </motion.div>
