@@ -11,7 +11,7 @@ const page = () => {
   const params = useParams();
   const id = params.id as string;
   return (
-    <div>
+    <div  className="flex h-screen w-full bg-[#140f1c]">
       <RoomLeft />
       <Board />
       <RoomRight />

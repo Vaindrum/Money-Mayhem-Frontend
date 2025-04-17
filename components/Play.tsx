@@ -15,7 +15,7 @@ const Play = () => {
     router.push('/room/123');
   }
   return (
-    <main className='min-h-screen bg-[#1a1625] text-white flex flex-col items-center justify-center px-4'>
+    <main className='min-h-screen bg-gradient-to-b to-[#1a0c2d] from-black text-white flex flex-col items-center justify-center px-4'>
       <div className='absolute top-4 right-4 flex gap-4 text-sm text-primary'>
         <button className='cursor-pointer p-2 hover:bg-gray-800 rounded-lg'>Store</button>
         <button className='cursor-pointer p-2 hover:bg-gray-800 rounded-lg'>Login</button>
@@ -23,10 +23,10 @@ const Play = () => {
 
       <motion.div initial={{opacity:0, y:-20}} animate={{opacity:1, y:0}} className='text-center'>
         <div className='flex justify-center mb-4'>
-          <IoDice size={124}/>
+          <IoDice size={124} className='animate-pulse hover:animate-spin'/>
         </div>
         <h1 className='text-6xl text-white font-bold'>MoneyMayhem</h1>
-        <p className='text-primary text-2xl font-medium mt-2'>Build your empire</p>
+        <p className='text-primary text-2xl font-medium mt-2'>Build your empire. Rags to Riches.</p>
 
         <div className='mt-8 space-y-4'>
           <input type="text" placeholder='Your nickname....' className='bg-gray-700 px-4 py-2 rounded-md w-[10.5rem] border-0'/>

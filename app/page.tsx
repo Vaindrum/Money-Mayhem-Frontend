@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Play from "@/components/Play";
 import HowToPlay from "@/components/HowToPlay";
 import Footer from "@/components/Footer";
